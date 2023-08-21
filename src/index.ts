@@ -214,6 +214,8 @@ const transformWithOptions = async (
         parser,
         experimental: { plugins: options.plugins },
         transform: {
+          decoratorMetadata: true,
+          legacyDecorator: true,
           useDefineForClassFields: true,
           react: reactConfig,
         },
